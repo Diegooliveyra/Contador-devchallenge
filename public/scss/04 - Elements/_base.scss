@@ -1,0 +1,19 @@
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+}
+
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  background-color: $dark-color;
+  color: $light-color;
+  height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}

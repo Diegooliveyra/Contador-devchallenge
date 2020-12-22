@@ -1,0 +1,20 @@
+.title {
+    font-size: em(86);
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $gray-color-dark;
+    margin-bottom: $gap-larger;
+}
+
+.title-numbers {
+    font-size: em(120);
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $light-color;
+}
+
+.sub-title {
+    font-size: em(22);
+    text-transform: uppercase;
+    color: $purple-color;
+}
