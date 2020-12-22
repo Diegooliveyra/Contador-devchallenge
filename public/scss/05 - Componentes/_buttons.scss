@@ -1,0 +1,31 @@
+.modal__btn {
+    width: 100%;
+    padding: $gap-small;
+    border-radius: 10px;
+    background-color: $purple-color;
+    color: $light-color;
+    border: none;
+    font-size: em(20);
+    font-weight: 700;
+    cursor: pointer;
+    outline-style: none;
+    &:hover {
+        background: $purple-color-hover;
+    }
+}
+
+.header__btn {
+    width: 150px;
+    padding: $gap-smaller;
+    border-radius: 10px;
+    background-color: $purple-color;
+    color: $light-color;
+    border: none;
+    font-size: em(20);
+    font-weight: 700;
+    cursor: pointer;
+    outline-style: none;
+    &:hover {
+        background: $purple-color-hover;
+    }
+}
