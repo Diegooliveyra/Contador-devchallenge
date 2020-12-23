@@ -90,11 +90,23 @@ a {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: 3.5em;
+  }
+}
+
 .title-numbers {
   font-size: 7.5em;
   text-transform: uppercase;
   font-weight: 700;
   color: #E3E3E3;
+}
+
+@media screen and (max-width: 767px) {
+  .title-numbers {
+    font-size: 5em;
+  }
 }
 
 .sub-title {
@@ -127,6 +139,12 @@ a {
   background: #b811bb;
 }
 
+@media screen and (max-width: 767px) {
+  .modal__btn {
+    max-width: 90vw;
+  }
+}
+
 .header__btn {
   width: 150px;
   padding: 10px;
@@ -144,6 +162,13 @@ a {
   background: #b811bb;
 }
 
+@media screen and (max-width: 767px) {
+  .header__btn {
+    position: absolute;
+    bottom: 30px;
+  }
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -154,7 +179,15 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px 0;
+  padding: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .contador {
@@ -171,6 +204,7 @@ a {
           align-items: center;
   height: 70vh;
   width: 100%;
+  padding: 0 10px;
 }
 
 .contador__numbers {
@@ -183,6 +217,14 @@ a {
           justify-content: center;
   gap: 50px;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .contador__numbers {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 20px;
+  }
 }
 
 .contador.active {
@@ -289,6 +331,12 @@ a {
   outline-style: none;
   text-align: center;
   border: none;
+}
+
+@media screen and (max-width: 767px) {
+  .modal__input {
+    max-width: 90vw;
+  }
 }
 
 .modal.hidden {

@@ -12,6 +12,9 @@
     &:hover {
         background: $purple-color-hover;
     }
+    @include device(mobile){
+        max-width: 90vw;
+      }
 }
 
 .header__btn {
@@ -28,4 +31,8 @@
     &:hover {
         background: $purple-color-hover;
     }
+    @include device(mobile){
+        position: absolute;
+        bottom: $gap-medium;
+      }
 }

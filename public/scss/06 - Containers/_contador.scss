@@ -5,13 +5,17 @@
     align-items: center;
     height: 70vh;
     width: 100%;
-    
+    padding: 0 $gap-smaller;
     &__numbers {
         display: flex;
         width: 100%;
         justify-content: center;
         gap: $gap-larger;
         text-align: center;
+        @include device(mobile){
+          flex-wrap: wrap;
+          gap: $gap-small;
+        }
     }
   
   &.active {

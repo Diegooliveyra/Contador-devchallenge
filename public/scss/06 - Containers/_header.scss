@@ -2,5 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: $gap-medium 0;
+    padding: $gap-medium;
+    @include device(mobile){
+        justify-content: center;
+      }
 }

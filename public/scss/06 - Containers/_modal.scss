@@ -24,6 +24,7 @@
     margin-bottom: $gap-larger;
     display: flex;
     gap: $gap-small;
+    
   }
   &__data {
     display: flex;
@@ -38,6 +39,9 @@
     outline-style: none;
     text-align: center;
     border: none;
+    @include device(mobile){
+      max-width: 90vw;
+    }
   }
   &.hidden {
     display: none;

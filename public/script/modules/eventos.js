@@ -1,6 +1,6 @@
 import atualizaData from "./atualiza-data.js";
 import calculaData from "./calcula-data.js";
-import resetaData from "./reset-data.js"
+import resetaData from "./reset-data.js";
 
 export default function eventos() {
   const modal = document.querySelector("[data-modal]");
@@ -21,7 +21,7 @@ export default function eventos() {
         loader.classList.add("hidden");
       } else {
         contador.classList.add("active");
-       
+        loader.classList.add("hidden");
       }
     }, 1000);
     atualizaData();
@@ -29,6 +29,7 @@ export default function eventos() {
 
   function reiniciarContador() {
     modal.classList.remove("hidden");
-  
+    loader.classList.add("hidden");
+    contador.classList.remove("active");
   }
 }
