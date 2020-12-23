@@ -1,48 +1,69 @@
 .modal {
-    background-color: $dark-color;
-    opacity: .95;
-    
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
+  background-color: $dark-color;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    &__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 60vh;
-    }
-    &__logo {
-        width: 320px;
-        margin-bottom: $gap-larger;
-    }
-    &__form {
-        margin-top: $gap-larger;
-        margin-bottom: $gap-larger;
-        display: flex;
-        gap: $gap-small;
-    }
-    &__data {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    &__input {
-        padding: $gap-small $gap-larger;
-        color: $gray-color-light;
-        border-radius: 10px;
-        font-size: em(28);
-        outline-style: none;
-        text-align: center;
-        border: none;
-    }
-    &.hidden {
-        display: none;
-    }
-   
+    height: 60vh;
+  }
+  &__logo {
+    width: 320px;
+    margin-bottom: $gap-larger;
+  }
+  &__form {
+    margin-top: $gap-larger;
+    margin-bottom: $gap-larger;
+    display: flex;
+    gap: $gap-small;
+  }
+  &__data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__input {
+    padding: $gap-small $gap-larger;
+    color: $gray-color-light;
+    border-radius: 10px;
+    font-size: em(28);
+    outline-style: none;
+    text-align: center;
+    border: none;
+  }
+  &.hidden {
+    display: none;
+  }
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  &__spinner {
+    border: 8px solid rgba(221, 221, 221, 0.1);
+    border-left-color: $purple-color;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+  }
+  &.hidden {
+    display: none;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }

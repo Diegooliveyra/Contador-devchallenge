@@ -1,6 +1,8 @@
 export default function converteData() {
   const dataInformada = document.querySelector('[data-modal="data"]').value;
+
   
+
   function converteDataParaArray() {
     const arrayDate = dataInformada.split("-");
     return {
@@ -14,5 +16,6 @@ export default function converteData() {
   const dataFutura = `${data.mes} ${data.dia} ${data.ano} 23:59 `;
 
   const dataConvertida = new Date(dataFutura);
+
   return dataConvertida;
 }

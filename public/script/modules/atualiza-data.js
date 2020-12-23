@@ -5,11 +5,13 @@ export default function atualizaData() {
   const horas = document.querySelector('[data-contador="horas"]');
   const minutos = document.querySelector('[data-contador="minutos"]');
   const segundos = document.querySelector('[data-contador="segundos"]');
+  
 
-  setInterval(() => {
+ const timer = setInterval(() => {
     dias.innerText = calculaData().dias;
     horas.innerText = calculaData().horas;
     minutos.innerText = calculaData().minutos;
     segundos.innerText = calculaData().segundos;
   }, 1000);
+  
 }

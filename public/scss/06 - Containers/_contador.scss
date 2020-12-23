@@ -13,9 +13,7 @@
         gap: $gap-larger;
         text-align: center;
     }
-  &.active-blur {
-    filter: blur(9px);
-  }
+  
   &.active {
     display: flex;
     animation: up 1s forwards ;

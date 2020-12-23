@@ -11,34 +11,38 @@
       <img src="../public/assets/logo.svg" alt="Logo contador" />
       <button class="header__btn" data-contador="reiniciar">Reiniciar</button>
     </header>
-    <section data-contador="section" class="contador container active-blur">
+    <section data-contador="section" class="contador container ">
       <h2 class="title">Faltam</h2>
       <div class="contador__numbers">
         <div class="days">
-          <h1 data-contador="dias" class="title-numbers">15</h1>
+          <h1 data-contador="dias" class="title-numbers">0</h1>
           <h3 class="sub-title">Dias</h3>
         </div>
         <div class="hours">
-          <h1 data-contador="horas" class="title-numbers">18</h1>
+          <h1 data-contador="horas" class="title-numbers">0</h1>
           <h3 class="sub-title">Horas</h3>
         </div>
         <div class="minutes">
-          <h1 data-contador="minutos" class="title-numbers">20</h1>
+          <h1 data-contador="minutos" class="title-numbers">0</h1>
           <h3 class="sub-title">Minutos</h3>
         </div>
         <div class="seconds">
-          <h1 data-contador="segundos" class="title-numbers">35</h1>
+          <h1 data-contador="segundos" class="title-numbers">0</h1>
           <h3 class="sub-title">Segundos</h3>
         </div>
       </div>
     </section>
-    <div data-modal class="modal">
+    <div data-loader class="loader container hidden ">
+      <div class="loader__spinner"></div>
+    </div>
+    <div data-modal class="modal ">
+      
       <div class="modal__content">
         <img class="modal__logo" src="../public/assets/logo.svg" alt="Logo Contador" />
         <h2 class="title-modal">Informe uma data</h2>
         <form class="modal__form">
           <div class="modal__data">
-            <input data-modal="data" class="modal__input" type="date" name="dia" required />
+            <input data-modal="data" class="modal__input" type="date" name="dia" required="required" />
           </div>
         </form>
         <button data-modal="btn" class="modal__btn">Iniciar</button>
