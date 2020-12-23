@@ -29,9 +29,7 @@
   &__form {
     margin-top: $gap-larger;
     margin-bottom: $gap-larger;
-    display: flex;
-    gap: $gap-small;
-    
+
   }
   &__data {
     display: flex;
@@ -42,12 +40,18 @@
     padding: $gap-small $gap-larger;
     color: $gray-color-light;
     border-radius: 10px;
-    font-size: em(28);
+    font-size: em(26);
     outline-style: none;
     text-align: center;
     border: none;
+    width: 320px;
     @include device(mobile){
-      max-width: 90vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: $gap-small 0;
+      font-size: em(20);
+      width: 90vw;
     }
   }
   &.hidden {

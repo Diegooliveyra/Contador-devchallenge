@@ -326,10 +326,6 @@ a {
 .modal__form {
   margin-top: 50px;
   margin-bottom: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 20px;
 }
 
 .modal__data {
@@ -349,15 +345,27 @@ a {
   padding: 20px 50px;
   color: #808080;
   border-radius: 10px;
-  font-size: 1.75em;
+  font-size: 1.625em;
   outline-style: none;
   text-align: center;
   border: none;
+  width: 320px;
 }
 
 @media screen and (max-width: 767px) {
   .modal__input {
-    max-width: 90vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 20px 0;
+    font-size: 1.25em;
+    width: 90vw;
   }
 }
 
