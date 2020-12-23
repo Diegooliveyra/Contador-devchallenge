@@ -13,7 +13,7 @@ export default function converteData() {
   }
 
   const data = converteDataParaArray();
-  const dataFutura = `${data.mes} ${data.dia} ${data.ano} 23:59 `;
+  const dataFutura = `${data.mes} ${data.dia} ${data.ano} 23:59:59 `;
 
   const dataConvertida = new Date(dataFutura);
 

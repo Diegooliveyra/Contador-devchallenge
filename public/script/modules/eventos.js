@@ -17,7 +17,6 @@ export default function eventos() {
     loader.classList.remove("hidden");
     setTimeout(() => {
       if (!calculaData().dias) {
-        console.log("ok");
         modal.classList.remove("hidden");
         loader.classList.add("hidden");
       } else {
