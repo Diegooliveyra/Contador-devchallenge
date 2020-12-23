@@ -16,8 +16,16 @@ export default function eventos() {
     modal.classList.add("hidden");
     loader.classList.remove("hidden");
     setTimeout(() => {
-      loader.classList.add("hidden");
-      contador.classList.add("active");
+      // loader.classList.add("hidden");
+      // contador.classList.add("active");
+      if (!calculaData().segundos) {
+        console.log("ok");
+        modal.classList.remove("hidden");
+        loader.classList.add("hidden");
+      } else {
+        contador.classList.add("active");
+        loader.classList.add("hidden");
+      }
     }, 1000);
     atualizaData();
   }
