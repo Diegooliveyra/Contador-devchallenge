@@ -8,6 +8,9 @@
         font-size: em(45);
         margin-bottom: $gap-medium;
       }
+      @include device(tablet){
+        font-size: em(45);
+      }
 }
 
 .title-numbers {
@@ -16,6 +19,9 @@
     font-weight: 700;
     color: $light-color;
     @include device(mobile){
+        font-size: em(70);
+      }
+      @include device(tablet){
         font-size: em(70);
       }
 }

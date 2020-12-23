@@ -20,10 +20,11 @@ export default function calculaData() {
   }
 
   function tempoFaltante() {
-    const dias = converterEmDias(diferençaData);
+    const dias = converterEmDias(diferençaData) - 1;
     const horas = converterEmHoras(diferençaData) % 24;
     const minutos = converterEmMinutos(diferençaData) % 60;
     const segundos = converterEmSegundos(diferençaData) % 60;
+    console.log(dias)
     return {
       dias,
       horas,
