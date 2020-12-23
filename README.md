@@ -1,4 +1,4 @@
-<p align='center'><img width='200' src="./.github/logo.svg"></p>
+<p align='center'><img width='250' src="./.github/logo.svg"></p>
 <h1 align='center'>Contador- Desafio devchallenge </h1>
 <p align='center'>
 <img src="https://img.shields.io/github/languages/code-size/Diegooliveyra/Contador-devchallenge">
@@ -41,7 +41,7 @@ $ index.html
 ```
 
 </br>
-<h3 align="center"><a href="https://contador-devchallenge.netlify.app/" target="_blank">🔖 Visite o site 🔖</a></h3>
+<h3 align="center"><a href="https://contador-devchallenge.netlify.app/" target="_blank">🔖 Link do Projeto 🔖</a></h3>
 </br>
 </br>
 <h3 align="center"><a href="https://devchallenge.now.sh/challenges/5ed6d70709347b1dbf411b37/details" target="_blank">🔖 Link do Desafio 🔖</a></h3>
