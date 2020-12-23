@@ -58,13 +58,15 @@ table {
 
 html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  height: -webkit-fill-available;
 }
 
 body {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   background-color: #0F0F0F;
   color: #E3E3E3;
-  height: 100vh;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   position: relative;
 }
 
@@ -92,7 +94,8 @@ a {
 
 @media screen and (max-width: 767px) {
   .title {
-    font-size: 3.5em;
+    font-size: 2.8125em;
+    margin-bottom: 30px;
   }
 }
 
@@ -105,7 +108,7 @@ a {
 
 @media screen and (max-width: 767px) {
   .title-numbers {
-    font-size: 5em;
+    font-size: 4.375em;
   }
 }
 
@@ -165,7 +168,7 @@ a {
 @media screen and (max-width: 767px) {
   .header__btn {
     position: absolute;
-    bottom: 30px;
+    bottom: 5vh;
   }
 }
 
@@ -205,6 +208,12 @@ a {
   height: 70vh;
   width: 100%;
   padding: 0 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .contador {
+    height: 60vh;
+  }
 }
 
 .contador__numbers {
@@ -279,6 +288,12 @@ a {
           align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  .modal {
+    height: calc(100vh - 30px);
+  }
+}
+
 .modal__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -294,6 +309,13 @@ a {
       -ms-flex-align: center;
           align-items: center;
   height: 60vh;
+}
+
+@media screen and (max-width: 767px) {
+  .modal__content {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .modal__logo {

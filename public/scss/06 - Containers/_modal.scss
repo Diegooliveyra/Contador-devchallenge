@@ -8,12 +8,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @include device(mobile){
+    height: calc(100vh - 30px) ;
+  }
+  
   &__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 60vh;
+    @include device(mobile){
+      justify-content: space-around;
+    }
   }
   &__logo {
     width: 320px;

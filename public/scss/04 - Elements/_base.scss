@@ -1,12 +1,14 @@
 html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+  height: -webkit-fill-available;
 }
 
 body {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   background-color: $dark-color;
   color: $light-color;
-  height: 100vh;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   position: relative;
 }
 

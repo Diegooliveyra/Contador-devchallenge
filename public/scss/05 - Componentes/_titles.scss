@@ -5,7 +5,8 @@
     color: $gray-color-dark;
     margin-bottom: $gap-larger;
     @include device(mobile){
-        font-size: em(56);
+        font-size: em(45);
+        margin-bottom: $gap-medium;
       }
 }
 
@@ -15,7 +16,7 @@
     font-weight: 700;
     color: $light-color;
     @include device(mobile){
-        font-size: em(80);
+        font-size: em(70);
       }
 }
 

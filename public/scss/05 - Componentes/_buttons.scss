@@ -33,6 +33,6 @@
     }
     @include device(mobile){
         position: absolute;
-        bottom: $gap-medium;
+        bottom: 5vh;
       }
 }
