@@ -43,7 +43,6 @@ $ index.html
 </br>
 <h3 align="center"><a href="https://contador-devchallenge.netlify.app/" target="_blank">🔖 Link do Projeto 🔖</a></h3>
 </br>
-</br>
 <h3 align="center"><a href="https://devchallenge.now.sh/challenges/5ed6d70709347b1dbf411b37/details" target="_blank">🔖 Link do Desafio 🔖</a></h3>
 </br>
 
