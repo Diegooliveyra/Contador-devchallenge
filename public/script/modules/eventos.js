@@ -1,6 +1,5 @@
 import atualizaData from "./atualiza-data.js";
 import calculaData from "./calcula-data.js";
-import resetaData from "./reset-data.js";
 
 export default function eventos() {
   const modal = document.querySelector("[data-modal]");
@@ -8,6 +7,7 @@ export default function eventos() {
   const contador = document.querySelector('[data-contador="section"]');
   const reiniciarBtn = document.querySelector('[data-contador="reiniciar"]');
   const loader = document.querySelector("[data-loader]");
+  const modalTitle = document.querySelector('[data-modal="title"]')
 
   modalBtn.addEventListener("click", iniciarContador);
   reiniciarBtn.addEventListener("click", reiniciarContador);
@@ -16,10 +16,8 @@ export default function eventos() {
     modal.classList.add("hidden");
     loader.classList.remove("hidden");
     setTimeout(() => {
-      // loader.classList.add("hidden");
-      // contador.classList.add("active");
-      if (!calculaData().segundos) {
-        console.log("ok");
+      if (!calculaData().segundos || calculaData().segundos < 0) {
+        modalTitle.innerText = 'Data incorreta 🙁👇'
         modal.classList.remove("hidden");
         loader.classList.add("hidden");
       } else {
