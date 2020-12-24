@@ -17,7 +17,7 @@ export default function eventos() {
     loader.classList.remove("hidden");
     setTimeout(() => {
       if (!calculaData().segundos || calculaData().segundos < 0) {
-        modalTitle.innerText = 'Data incorreta 🙁👇'
+        modalTitle.innerText = 'Data incorreta 🙁'
         modal.classList.remove("hidden");
         loader.classList.add("hidden");
       } else {
@@ -32,5 +32,6 @@ export default function eventos() {
     modal.classList.remove("hidden");
     loader.classList.add("hidden");
     contador.classList.remove("active");
+    modalTitle.innerText = 'Informe uma data'
   }
 }
